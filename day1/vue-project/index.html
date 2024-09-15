@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="getInfoContainer">
+          <div id="getInfo">
+            <p>isim:</p>
+            <textarea
+              name="getName"
+              id="getName"
+              placeholder="İsminizi giriniz..."
+            ></textarea>
+          </div>
+
+          <div id="getInfo">
+            <p>soyisim:</p>
+            <textarea
+              name="getSurname"
+              id="getSurname"
+              type
+              placeholder="Soyisminizi giriniz..."
+            ></textarea>
+          </div>
+
+          <div id="getBirthDate">
+            <p>Doğum tarihiniz:</p>
+            <input type="date" id="birthdate" />
+          </div>
+        </div>
+
+        <div class="getDepartment">
+          <div class="getDepartmentName">
+            <p>Bulunduğunuz departmanı seçiniz:</p>
+            <select name="" id="departmentName">
+              <option value="Human Resources">Human Resources</option>
+              <option value="Information Tech">Information Tech</option>
+              <option value="Ground Services">Ground Services</option>
+            </select>
+          </div>
+
+          <div class="getGender">
+            <p>select your gender:</p>
+            <form action="" id="gender">
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label><br />
+
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+            </form>
+          </div>
+        </div>
+
+        <div class="submit">
+          <!-- <button id="submitInfos" onclick="allInformations()">Submit</button> -->
+          <button id="submitInfos" @click="takeInformations">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

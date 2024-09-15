@@ -1,0 +1,136 @@
+body {
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    resize: none;
+  }
+  
+  p {
+    font-weight: bolder;
+  }
+  
+  .container {
+    margin: auto;
+    margin-top: 80px;
+    background-color: whitesmoke;
+    height: fit-content; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    width: 900px;
+    border: none;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .getInfoContainer {
+    text-align: center;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* !!!!!!!!!!!!!!!!!!! */
+    height: 100%;
+    width: 50%;
+  }
+  
+  .getInfoContainer #getName {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    height: fit-content;
+  
+    margin: 0;
+    margin-left: 45px;
+  
+    width: 300px;
+    height: 20px;
+  }
+  
+  .getInfoContainer #getSurname {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    height: fit-content;
+  
+    width: 300px;
+    height: 20px;
+    margin: 0;
+    margin-left: 20px;
+  }
+  
+  #getInfo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+  }
+  
+  #getBirthDate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #getBirthDate input {
+    margin-left: 30px;
+    padding: 10px;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .getDepartment {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  
+  .getDepartmentName {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .getDepartmentName select {
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    width: 170px;
+  }
+  
+  .getDepartmentName p {
+    width: fit-content;
+  }
+  
+  .getGender {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .getGender form {
+    margin-left: 20px;
+  }
+  
+  #submitInfos {
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(165, 211, 96);
+    cursor: pointer;
+  }
+  

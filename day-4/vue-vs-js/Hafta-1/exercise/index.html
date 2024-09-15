@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+  </head>
+  <body>
+
+  <div id="app">
+
+<p v-bind:style="{backgroundColor: isImportant ? 'blue' : 'gray'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla dolorum corrupti asperiores, esse quod, voluptatem reprehenderit, iusto quia ratione fuga architecto nisi recusandae enim porro. Odit ratione sint ipsa?</p>
+<h3 v-if="toggle">tıkla</h3>
+
+
+<p v-for="isim in arrayList">  {{isim.name}}</p>
+
+
+
+<input type="number" v-on:input="onInput++">
+
+<p>{{onInput}}</p>
+
+
+  </div>
+
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
